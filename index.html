@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <section class="game-options">
-        <article class="questions-quantity">
-          <h2>¿Cuántas preguntas quires?</h2>
-          <span>5</span>
-          <input type="range" min="5" max="30" />
-        </article>
-        <article class="questions-time">
-          <h2>¿Cuánto tiempo quieres por pregunta?</h2>
-          <div>
-            <label for="10s">10 seconds</label>
-            <input type="radio" id="10s" name="radio" value="10s" />
-          </div>
-          <div>
-            <label for="20s">20 seconds</label>
-            <input type="radio" id="20s" name="radio" value="20s" />
-          </div>
-          <div>
-            <label for="30s">30 seconds</label>
-            <input type="radio" id="30s" name="radio" value="30s" />
-          </div>
-          <div>
-            <label for="60s">60 seconds</label>
-            <input type="radio" id="60s" name="radio" value="60s" />
-          </div>
-        </article>
-        <article class="questions-topics">
-          <h2>Temas</h2>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="science-input"
-              id="science-input"
-            />
-            <p>Ciencia</p>
-          </div>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="geography-input"
-              id="geography-input"
-            />
-            <p>Geografía</p>
-          </div>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="art-input"
-              id="art-input"
-            />
-            <p>Arte</p>
-          </div>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="history-input"
-              id="history-input"
-            />
-            <p>Historia</p>
-          </div>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="mitology-input"
-              id="mitology-input"
-            />
-            <p>Mitología</p>
-          </div>
-          <div class="checkbox-container">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="culture-input"
-              id="culture-input"
-            />
-            <p>Cultura General</p>
-          </div>
-        </article>
-        <button class="play-button" id="play-button">Jugar</button>
-      </section>
-      <section class="game">
-        <h2 class="question" id="question">
-          ¿Qué barco famoso se hundió en 1912?
-        </h2>
-        <span>Titanic</span>
-        <span>Lusitania</span>
-        <span>Britannic</span>
-        <span>Endurance</span>
-      </section>
-    </main>
-    <script src="./js/scripts.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<section class="game-options">
+				<article class="questions-quantity">
+					<h2>¿Cuántas preguntas quieres?</h2>
+					<span class="questions-number" id="questions-number">5</span>
+					<input id="range-input" type="range" min="5" max="30" />
+				</article>
+				<article class="questions-time" id="time-options-container">
+					<h2>¿Cuánto tiempo quieres por pregunta?</h2>
+					<div>
+						<label for="10s">10 seconds</label>
+						<input type="radio" id="10s" name="radio" value="10s" />
+					</div>
+					<div>
+						<label for="20s">20 seconds</label>
+						<input type="radio" id="20s" name="radio" value="20s" />
+					</div>
+					<div>
+						<label for="30s">30 seconds</label>
+						<input type="radio" id="30s" name="radio" value="30s" />
+					</div>
+					<div>
+						<label for="60s">60 seconds</label>
+						<input type="radio" id="60s" name="radio" value="60s" />
+					</div>
+				</article>
+				<article class="questions-topics">
+					<h2>Temas</h2>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="science-input"
+							id="science-input"
+						/>
+						<p>Ciencia</p>
+					</div>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="geography-input"
+							id="geography-input"
+						/>
+						<p>Geografía</p>
+					</div>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="art-input"
+							id="art-input"
+						/>
+						<p>Arte</p>
+					</div>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="history-input"
+							id="history-input"
+						/>
+						<p>Historia</p>
+					</div>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="mitology-input"
+							id="mitology-input"
+						/>
+						<p>Mitología</p>
+					</div>
+					<div class="checkbox-container">
+						<input
+							class="checkbox-input"
+							type="checkbox"
+							name="culture-input"
+							id="culture-input"
+						/>
+						<p>Cultura General</p>
+					</div>
+				</article>
+				<button class="play-button" id="play-button">Jugar</button>
+			</section>
+			<section class="game">
+				<h2 class="question" id="question">
+					¿Qué barco famoso se hundió en 1912?
+				</h2>
+				<span>Titanic</span>
+				<span>Lusitania</span>
+				<span>Britannic</span>
+				<span>Endurance</span>
+			</section>
+		</main>
+		<script src="./js/scripts.js"></script>
+	</body>
 </html>
